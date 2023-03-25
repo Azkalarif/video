@@ -3,7 +3,8 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const { url } = req.query;
+    const { url } = req?.query;
+    //@ts-ignore
     const response = await axios.get(url, { responseType: 'stream' });
 
     res.setHeader('Content-Type', 'video/mp4');
@@ -14,6 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     response.data.pipe(res);
   } catch (error) {
     console.error(error);
+    //@ts-ignore
     res.status(500).send(error.message);
   }
 }

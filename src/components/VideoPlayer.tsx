@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoPlayer = ({ url }) => {
+const VideoPlayer = ({ url }:{url:any}) => {
   return (
     <div>
       <video controls>
