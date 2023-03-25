@@ -15,7 +15,7 @@ const MyPage =  ({data}:{data:any}) => {
 
 export default MyPage;
 
-export async function getServerSideProps() { const data = await fetch('https://641f5fff60493a000834ba1a--curious-begonia-a488e9.netlify.app/api/bypass?url=https://layarkacaxxi.icu/f/4m54xsz0q125weq/3659879afca2b4f8aab7ec8c84b1d46a').then((res)=> res.json())
+export async function getServerSideProps() { const data = await fetch('https://curious-begonia-a488e9.netlify.app/api/bypass?url=https://layarkacaxxi.icu/f/4m54xsz0q125weq/3659879afca2b4f8aab7ec8c84b1d46a').then((res)=> res.json())
 //console.log(data)
 
     return { 
