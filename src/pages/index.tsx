@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 
-const MyPage =  ({data}) => {
+const MyPage =  ({data}:{data:any}) => {
   //console.log(data)
  //const videoUrl = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4'
  const videoUrl = data.file
